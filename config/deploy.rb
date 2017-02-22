@@ -2,13 +2,13 @@
 lock "3.7.2"
 
 set :application, "ipso_facto"
-set :repo_url, "git@github.com:me/ipso_facto.git"
+set :repo_url, "git@github.com:leyyaps/ipso_facto.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
+ set :deploy_to, "/home/ipso_facto/ipso_facto"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -19,6 +19,9 @@ set :repo_url, "git@github.com:me/ipso_facto.git"
 
 # Default value for :pty is false
 # set :pty, true
+
+append :linked_files, "config/database.yml", "config/secrets.yml"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml", "config/secrets.yml"
