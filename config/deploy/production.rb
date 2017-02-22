@@ -1,3 +1,7 @@
+# Replace 127.0.0.1 with your server's IP address!
+server '160.153.228.17', user: 'ipso_facto', roles: %w{app db web}
+
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
