@@ -64,7 +64,7 @@ group :development do
   gem 'capistrano-passenger', '~> 0.2.0'
 
   # Add this if you're using rbenv
-  gem 'capistrano-rbenv', '~> 2.1'
+  gem 'capistrano-rbenv', github: "capistrano/rbenv"
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
