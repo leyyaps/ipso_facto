@@ -1,0 +1,837 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ *= require_self
+
+
+ */
+ @import "font-awesome";
+ @import "bootstrap";
+ @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+/*IPSO COLOR SCHEME
+
+  Pink -> #F20574
+  Brown -> #64554C
+  Darker Cream -> #E4D9C6
+  Lighter Cream -> #FAF8F5
+  Dark Grey -> #404041
+
+*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #64554C;
+
+}
+
+/* NAV BAR STYLING */
+
+// .navbar {
+//   background:transparent;
+//   background-image:none;
+//   border-color:transparent;
+//   box-shadow:none;
+// }
+nav {
+  -webkit-transition: all 0.7s ease 0s;
+}
+
+nav.navbar.navbar-light.custom-nav {
+  border-radius: 0;
+  color: #F20574;
+}
+.navbar-light .navbar-nav .nav-link {
+   color: #F20574;
+}
+a.navbar-brand {
+  width: 100px;
+  height: 65px;
+  background:url('ipso_facto_color_white.svg') no-repeat center center;
+  -webkit-transition: all 0.7s ease 0s;
+}
+
+a.navbar-brand.scrolled {
+  background:url('ipso_color_logo.svg') no-repeat center center;
+  -webkit-transition: all 0.7s ease 0s;
+}
+
+.navbar .nav-link{
+  padding-top: 1.2rem;
+}
+
+.navbar-white {
+  background-color: #ffffff;
+  -webkit-transition: all 0.7s ease 0s;
+}
+
+div#navbarResponsive.navbar-toggleable-md{
+  text-align: center;
+}
+
+/* END NAV BAR*/
+
+
+/* WELCOME IMAGE - UMBRELLA*/
+#welcome {
+  width: 100%;
+  height: 100vh;
+  background:url('umbrella2.jpg')no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+ .centered {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 2;
+   max-width: 100%;
+ }
+/*END WELCOME IMAGE*/
+
+/*flamingo background*/
+#flamingo {
+  width: 100%;
+  height: 100vh;
+  background:url('flamingo.jpg')no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+/*End flamingo*/
+
+/*Headings*/
+h1, h2, h3, h4, h5, h6 {
+  color: #F20574;
+  text-transform: uppercase;
+}
+
+h1.display-1 {
+  font-size: 5rem;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+  
+}
+
+h1.display-3.jumboheader {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 0;
+  letter-spacing: 0.12em;
+}
+
+hr{
+  width: 15%;
+  height: 1px;
+  color: #404041;
+  background-color: #404041;
+}
+
+.section-headers {
+  padding-top: 0.8em;
+  text-align: center;
+ 
+}
+
+/*END headings*/
+
+/*Buttons*/
+
+a.main-btn {
+  background-color: #F20574;
+  border-radius: 0;
+  border-color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a.button-pink {
+  background-color: #F20574;
+  border-radius: 0;
+  border-color: #fff;
+  width: 50%;
+}
+/*Buttons*/
+
+
+.cream-band {
+  background-color: #FAF8F5;
+}
+
+
+p.text-box {  
+  padding: 3em 2em;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: #F20574;
+  line-height: 200px;
+  text-align: center;
+  color: #fff;
+  /* width and height can be anything, as long as they're equal */
+}
+.spacer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+@media (max-width: 991px) {
+  .circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+}
+
+.padding-bottom-30 {
+  padding-bottom:30px;
+} 
+
+ .hidden { display: none; }
+
+ /*FOOTER*/
+
+ footer {
+  background-color: #404041;
+  color: #ffffff;
+  text-align: center;
+  padding: 2em 0;
+ }
+
+ i.grey {
+  color: #404041;
+
+ }
+ .grey {
+  color: #404041;
+ }
+ h2.footer {
+  margin-top: 0.4em;
+ }
+ .pink {
+  color: #F20574;
+ }
+ .white {
+  color: #ffffff;
+ }
+ img.footer-logo {
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ label {
+  display: none;
+ }
+
+
+.form-field-wrapper {
+  margin-bottom: 20px;
+}
+
+input.input-sm, .input-sm {
+    padding: 8px 15px;
+    border-radius: 0;
+}
+
+.btn-pink.form-full {
+  background-color: #F20574;
+  color: #ffffff;
+  border-radius:0;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.btn-pink.form-full:hover, .btn-pink.form-full:focus, .btn-pink.form-full:active {
+  background-color: rgba(23,24,39,0.85);
+  -webkit-transition: all 0.3s ease 0s;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+#map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+
+ /*SHOW LOGO PAGE CSS*/
+.jumbotron {
+  
+  border-radius: 0;
+  background:no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 530px;
+  width: 100%;
+}
+.jumbo-logo-index {
+
+ background:url('logo-designer.jpg')no-repeat center center;
+ background-attachment: fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover; 
+ margin-bottom: 0;
+}
+
+.jumbo-contact {
+  background:url('woman-on-laptop.jpg')no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  margin-bottom: 0;
+}
+
+.jumbo-website {
+  background:url('man-working.jpg')no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  margin-bottom: 0;
+}
+.jumbo-design {
+  background:url('group-design.jpg')no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  margin-bottom: 0;
+}
+.jumbo-print {
+  background:url('stationary-background.jpg')no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  margin-bottom: 0;
+}
+
+.jumbo-social {
+  background:url('girl_on_phone.jpg')no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  margin-bottom: 0;
+}
+
+.jumbo-facebook {
+  background:url('facebook.jpg')no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  margin-bottom: 0;
+}
+
+.jumbo-instagram {
+  background:url('cameras_photographing_food.jpg')no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  margin-bottom: 0;
+}
+
+.jumbo-snapchat {
+  background:url('snap_selfie.jpg')no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  margin-bottom: 0;
+}
+
+.jumbo-twitter {
+  background:url('tweet_cover.jpg')no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  margin-bottom: 0;
+}
+
+.jumbo-search {
+  background:url('search.jpg')no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  margin-bottom: 0;
+}
+
+video.cinemagraph {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+
+}
+
+.text-center {
+  text-align: center;
+}
+
+.contact-box-left {
+  padding-left: 45px;
+  text-align: left;
+  display: block;
+  position: relative;
+}
+
+.contact-icon-left {
+  left: 0;
+  position: absolute;
+  
+}
+
+i.left {
+  margin-right: 6px;
+}
+
+img.certifications{
+  max-width: 80px;
+}
+img.ga-logo {
+  max-width: 25px;
+}
+
+ /*SHOW LOGO PAGE CCS END*/
+
+ .mb-30 {
+  margin-bottom: 30px;
+ }
+.mt-30 {
+  margin-top: 30px;
+}
+
+ .show-title {
+  text-align: center;
+ }
+.show-title {
+  margin-top: 150px;
+  padding-bottom: 0;
+
+ }
+
+
+.card.social{
+  border:none;
+}
+
+.aside {
+  background-color: #FAF8F5;
+}
+
+
+ // scrolltrigger animations 
+
+
+
+ .fromTopIn
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: translate(0,0);
+  opacity: 1.0;
+ }
+
+ .fromTopOut
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: translate(0,-10px);
+  opacity: 0.0;
+ }
+
+ @media only screen and (max-width:320px) {
+   h1.display-3 {
+    font-size: 2em;
+    
+   }
+   h1.display-3 {
+    text-align: center;
+   }
+
+ }
+
+.text-padding {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+// Hover Float
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+  text-decoration: none;
+  color: #64554C;
+}
+
+
+/*Video responsive*/
+.responsive-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.responsive-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Video responsive end*/
+
+
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+    display: inline-block;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: rgba(255, 255, 255, 0.8) url('cd-top-arrow.svg') no-repeat center 50%;
+    background-size: 20px;
+    -webkit-transition: all 0.7s ease 0s;
+}
+a.link {
+  text-decoration: none;
+  color: #F20574;
+}
+
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-xs-12 col-sm-6 col-md-6 col-lg-3'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-xs-12 col-sm-6 col-md-6 col-lg-3'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.card-img-top{
+  width:100%;
+  height:auto;
+  border-radius: 0;
+}
+
+
+
+ /*Back to top arrow*/
+
+ 
+ @media only screen and (min-width: 768px) {
+   .scrollup {
+     right: 20px;
+     bottom: 20px;
+   }
+
+  
+ }
+ @media only screen and (min-width: 1024px) {
+   .scrollup {
+     height: 60px;
+     width: 60px;
+     right: 30px;
+     bottom: 30px;
+   }
+ }
+ /*flash*/
+
+ .alert-error {
+ background-color: #f2dede;
+ border-color: #eed3d7;
+ color: #b94a48;
+ text-align: left;
+ }
+
+ .alert-alert {
+ background-color: #f2dede;
+ border-color: #eed3d7;
+ color: #b94a48;
+ text-align: left;
+ }
+
+ .alert-success {
+ background-color: #dff0d8;
+ border-color: #d6e9c6;
+ color: #468847;
+ text-align: left;
+ }
+
+ .alert-notice {
+ background-color: #dff0d8;
+ border-color: #d6e9c6;
+ color: #468847;
+ text-align: left;
+ }
+
+ /* Bob */
+ @-webkit-keyframes hvr-bob {
+   0% {
+     -webkit-transform: translateY(-8px);
+     transform: translateY(-8px);
+   }
+   50% {
+     -webkit-transform: translateY(-4px);
+     transform: translateY(-4px);
+   }
+   100% {
+     -webkit-transform: translateY(-8px);
+     transform: translateY(-8px);
+   }
+ }
+ @keyframes hvr-bob {
+   0% {
+     -webkit-transform: translateY(-8px);
+     transform: translateY(-8px);
+   }
+   50% {
+     -webkit-transform: translateY(-4px);
+     transform: translateY(-4px);
+   }
+   100% {
+     -webkit-transform: translateY(-8px);
+     transform: translateY(-8px);
+   }
+ }
+ @-webkit-keyframes hvr-bob-float {
+   100% {
+     -webkit-transform: translateY(-8px);
+     transform: translateY(-8px);
+   }
+ }
+ @keyframes hvr-bob-float {
+   100% {
+     -webkit-transform: translateY(-8px);
+     transform: translateY(-8px);
+   }
+ }
+ .hvr-bob {
+   display: inline-block;
+   vertical-align: middle;
+   -webkit-transform: perspective(1px) translateZ(0);
+   transform: perspective(1px) translateZ(0);
+   box-shadow: 0 0 1px transparent;
+ }
+ .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+   -webkit-animation-name: hvr-bob-float, hvr-bob;
+   animation-name: hvr-bob-float, hvr-bob;
+   -webkit-animation-duration: .3s, 1.5s;
+   animation-duration: .3s, 1.5s;
+   -webkit-animation-delay: 0s, .3s;
+   animation-delay: 0s, .3s;
+   -webkit-animation-timing-function: ease-out, ease-in-out;
+   animation-timing-function: ease-out, ease-in-out;
+   -webkit-animation-iteration-count: 1, infinite;
+   animation-iteration-count: 1, infinite;
+   -webkit-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+   -webkit-animation-direction: normal, alternate;
+   animation-direction: normal, alternate;
+ }
+/* hvr-bob */
+
+
+ /**
+  * Animations
+  */
+
+ .fromTopIn
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: translate(0,0);
+  opacity: 1.0;
+ }
+
+ .fromTopOut
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: translate(0,-10px);
+  opacity: 0.0;
+ }
+
+ .fromBottomIn
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: translate(0,0);
+  opacity: 1.0;
+ }
+
+ .fromBottomOut
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: translate(0,10px);
+  opacity: 0.0;
+ }
+
+ .fromLeftIn
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: translate(0,0);
+  opacity: 1.0;
+ }
+
+ .fromLeftOut
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: translate(-10px,0);
+  opacity: 0.0;
+ }
+
+ .fromRightIn
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: translate(0,0);
+  opacity: 1.0;
+ }
+
+ .fromRightOut
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: translate(10px, 0);
+  opacity: 0.0;
+ }
+
+ .scaleUpIn
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: scale(1.0,1.0);
+  opacity: 1.0;
+ }
+
+ .scaleUpOut
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: scale(1.3,1.3);
+  opacity: 0.0;
+ }
+
+ .scaleDownIn
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: scale(1.0,1.0);
+  opacity: 1.0;
+ }
+
+ .scaleDownOut
+ {
+  transition: transform 1.0s ease, opacity 1.0s ease;
+  
+  transform: scale(0.7,0.7);
+  opacity: 0.0;
+ }

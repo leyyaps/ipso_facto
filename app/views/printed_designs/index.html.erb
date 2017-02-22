@@ -1,0 +1,118 @@
+<div class="jumbotron jumbo-print">
+    <div class="show-title">
+      <h1 class="animated slideInLeft display-3 jumboheader">Printed Design</h1>
+    </div>
+</div>
+
+<div class="cream-band">
+  <div class="container">
+    <p class="py-3 mb-0 text-center lead">
+      At Ipso Facto we are passionate about beautiful design.<br>We revel in bringing together the best in function and form to deliver remarkable graphics for your business. 
+    </p>
+    
+  </div>
+</div>
+
+<div class="container">
+  <div class="row my-2">
+    <h2 data-scroll="toggle(.fromTopIn, .fromTopOut)" class="section-headers">Printed Design Services</h2>
+    <hr>
+  </div>
+ </div> 
+  <div class="container">
+  <div class="row">
+    <div data-scroll="toggle(.fromLeftIn, .fromLeftOut) offset(0, -250px)" class="col-sm-6">
+      <%= image_tag("business_card_demo.jpg", :alt => "Business card", :class => "img-fluid") %>
+    </div>
+    <div data-scroll="toggle(.fromRightIn, .fromRightOut)" class="col-sm-6 py-1">
+
+      <h3>Business Cards</h3>
+      <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+  </div>
+  <div class="row">
+    <div data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="col-sm-6 py-1">
+      <h3>Posters and Flyers</h3>
+      <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+
+    <div data-scroll="toggle(.fromRightIn, .fromRightOut) offset(0, -250px)" class="col-sm-6">
+      <%= image_tag("poster_mock_up.jpg", :alt => "Billboard", :class => "img-fluid") %>
+    </div>
+  </div>
+
+  <div class="row">
+    
+
+    <div data-scroll="toggle(.fromLeftIn, .fromLeftOut) offset(0, -250px)" class="col-sm-6">
+      <%= image_tag("gym_banner_mock.png", :alt => "Banner Mock-Up", :class => "img-fluid") %>
+    </div>
+
+    <div data-scroll="toggle(.fromRightIn, .fromRightOut)" class="col-sm-6 py-1">
+      <h3>Roller Banners</h3>
+      <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+  </div>
+
+  <div class="row">
+    
+
+   
+
+    <div data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="col-sm-6 py-1">
+      <h3>Everything else</h3>
+      <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+
+    <div data-scroll="toggle(.fromRightIn, .fromRightOut) offset(0, -250px)" class="col-sm-6">
+      <%= image_tag("andrews_beer.jpg", :alt => "Beer bottle Mock-Up", :class => "img-fluid") %>
+    </div>
+  </div>
+
+</div>
+<div class="cream-band my-2">
+  <div class="container">
+    <p data-scroll="toggle(.fromTopIn, .fromTopOut)" class="pt-2 text-center lead">
+      Whether it’s a clean and professional look, or a quirky and fun one. Whatever the style you’re looking for, our creative team can help you out.
+    </p>
+    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once" class="row mb-2">
+    <%= link_to 'Get a quote', contact_path, :class => "btn btn-primary d-block mx-auto button-pink" %>
+    </div>
+</div>
+  
+</div>
+
+<div class="container">
+  <div class="row my-2">
+    <h2 data-scroll="toggle(.fromTopIn, .fromTopOut)" class="section-headers">Printed Design Examples</h2>
+    <hr>
+  </div>
+  <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) offset(0, -350px) once" class="row is-flex my-2"> 
+    <% @printed_designs.each do |printed_design| %> 
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+      
+        <div class="card hvr-bob">
+          <%= link_to image_tag(printed_design.lead_image, :alt => "Other Projects", :class => "img-fluid" ), printed_design  %>
+          
+          <div class="card-block">
+            <h4 class="card-title text-center"><%= link_to printed_design.client, printed_design, :class => "link my-0" %></h4>
+           
+            
+          </div>
+        </div>
+      </div>
+      <% end %>
+     
+     
+      
+  </div>
+</div>
+
+<%= render "partials/circles" %>
+
+
+
+
+<br>
+
+<%= link_to 'New Printed Design', new_printed_design_path %>

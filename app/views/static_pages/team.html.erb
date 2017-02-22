@@ -1,0 +1,114 @@
+<div class="jumbotron jumbo-print">
+    <div class="show-title">
+      <h1 class="animated slideInLeft display-3 jumboheader">The Team</h1>
+    </div>
+</div>
+
+<div class="cream-band">
+  <div class="container">
+    <p class="py-3 mb-0 text-center lead">
+      At Ipso Facto we are passionate about beautiful design.<br>We revel in bringing together the best in function and form to deliver remarkable graphics for your business. 
+    </p>
+    
+  </div>
+</div>
+
+<div class="container">
+  <div class="row my-2">
+    <h2 data-scroll="toggle(.fromTopIn, .fromTopOut)" class="section-headers">Our Awesome People</h2>
+    <hr>
+  </div>
+ </div> 
+  <div class="container">
+  <div class="row">
+    <div data-scroll="toggle(.fromLeftIn, .fromLeftOut) offset(0, -250px)" class="col-sm-6">
+      <img class="img-fluid" src="http://fillmurray.com/800/800">
+    </div>
+    <div data-scroll="toggle(.fromRightIn, .fromRightOut) offset(0, -150px)" class="col-sm-6 py-1">
+
+      <h3>Alex Ottridge</h3>
+      <small>Events Co-ordinator</small>
+      <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+  </div>
+  <div class="row">
+    <div data-scroll="toggle(.fromLeftIn, .fromLeftOut) offset(0, -150px)" class="col-sm-6 py-1">
+      <h3>Nicola Tatler</h3>
+      <small>Graphic Designer & Office Manager</small>
+      <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+
+    <div data-scroll="toggle(.fromRightIn, .fromRightOut) offset(0, -250px)" class="col-sm-6">
+      <img class="img-fluid" src="http://fillmurray.com/800/800">
+    </div>
+  </div>
+
+  <div class="row">
+    
+
+    <div data-scroll="toggle(.fromLeftIn, .fromLeftOut) offset(0, -250px)" class="col-sm-6">
+      <img class="img-fluid" src="http://fillmurray.com/800/800">
+    </div>
+
+    <div data-scroll="toggle(.fromRightIn, .fromRightOut) offset(0, -400px)" class="col-sm-6 py-1">
+      <h3>Andrew Smith</h3>
+      <small><strong>Founder, Managing Director</strong></small>
+      <p class="lead">Andrew has a passion for great design. He can get excited in equal measure for a beautifully designed billboard, a website with fantastic user experience or even just an office bin with an automatic sensor. He loves it where form and function come together and he strives daily to put this into his work - be this designing a website for a client or a whole digital marketing campaign.</p>
+      <p class="lead">Andrew is a recent graduate from the General Assembly <%= image_tag ('ga-logo.png'), :alt => "Adobe Photoshop Certified Badge", :class => "ga-logo" %> Web Development Immersive training programme in London. As a full stack developer he has experience with:</p>
+      <div class="px-0 col-sm-4">
+      HTML<br>
+      JavaScript<br>
+      JQuery<br>
+      CSS, SASS, SCSS<br>
+      Ruby, Rails<br>
+      Mongo DB<br>
+      Express
+      </div>
+      <div class="px-0 col-sm-4">
+      Angular<br>
+      Node.js<br>
+      Heroku<br>
+      AWS<br>
+      NPM<br>
+      Bower<br>
+      Bootstrap
+      </div>
+      <div class="px-0 col-sm-4">
+      Git<br>
+      GoogleMapsAPI<br>
+      Gulp<br>
+      Adobe XD<br>
+      PostgreSQL<br>
+      </div>
+      <div class="my-1 px-0 col-sm-12">
+        <p>Andrew also has advanced skills in Illustrator, Indesign and Photoshop. The latter of which he has gained Adobe's Expert Certification.</p>
+        <%= image_tag ('adobe-certified-expert-photoshop-cc.png'), :alt => "Adobe Photoshop Certified Badge", :class => "certifications" %>
+        
+      </div>
+   
+    </div>
+
+  </div>
+
+
+</div>
+<div class="cream-band my-2">
+  <div class="container">
+    <p data-scroll="toggle(.fromTopIn, .fromTopOut)" class="pt-2 text-center lead">
+      Whether it’s a clean and professional look, or a quirky and fun one. Whatever the style you’re looking for, our creative team can help you out.
+    </p>
+    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once" class="row mb-2">
+    <%= link_to 'Get a quote', contact_path, :class => "btn btn-primary d-block mx-auto button-pink" %>
+    </div>
+</div>
+  
+</div>
+
+<%= render "partials/circles" %>
+
+
+
+
+<br>
+
+<%= link_to 'New Printed Design', new_printed_design_path %>

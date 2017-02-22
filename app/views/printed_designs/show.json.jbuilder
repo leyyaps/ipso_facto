@@ -1,0 +1,1 @@
+json.partial! "printed_designs/printed_design", printed_design: @printed_design

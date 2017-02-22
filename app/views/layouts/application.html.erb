@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IpsoFacto</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <%= csrf_meta_tags %>
+    
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  </head>
+
+  <body>
+    <%= render "partials/nav" %>
+
+    <p class="notice hidden"><%= notice %></p>
+    <p class="alert hidden"><%= alert %></p>
+
+    <%= yield %>
+
+    <a href="#0" class="arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+    <%= render "partials/footer" %>
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function(){
+        var trigger = new ScrollTrigger({
+          addHeight: true
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(function() {
+          $('.item').matchHeight();
+      });
+    </script>
+  </body>
+</html>

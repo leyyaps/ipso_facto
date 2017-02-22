@@ -1,0 +1,86 @@
+<div class="jumbotron jumbo-website">
+  <div class="show-title">
+    <h1 class="animated slideInLeft display-3 jumboheader">Web Design</h1>
+  </div>
+</div>
+<div class="cream-band">
+  <div class="container">
+    <p class="text-box">
+      Some generic text here about logo design. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra ex nisi, at vestibulum lacus viverra eu. Nullam vehicula leo ut mi placerat lacinia. Suspendisse placerat posuere risus id blandit.
+    </p>
+    
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div data-scroll="toggle(.fromLeftIn, .fromLeftOut) offset(0, -400px) once" class="col-md-6 lead">
+    <h1 class="display-3 mt-30">Mobile First</h1>
+      <p class="mb-30">Some generic text here about logo design. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra ex nisi, at vestibulum lacus viverra eu. Nullam vehicula leo ut mi placerat lacinia. Suspendisse placerat posuere risus id blandit.</p>
+
+      <p class="mb-30">Some generic text here about logo design. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra ex nisi, at vestibulum lacus viverra eu. Nullam vehicula leo ut mi placerat lacinia. Suspendisse placerat posuere risus id blandit.</p>
+
+      <p class="mb-30">Some generic text here about logo design. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra ex nisi, at vestibulum lacus viverra eu. Nullam vehicula leo ut mi placerat lacinia. Suspendisse placerat posuere risus id blandit.</p>
+    </div>
+    <div data-scroll="toggle(.fromRightIn, .fromRightOut) offset(0, -400px) once" class="col-md-6">
+    
+
+      <%= image_tag("iphone.png", :alt => "iphone", :class => "img-fluid  mx-auto d-block mb-30") %>
+    </div>
+  </div>
+</div>
+
+<div class="cream-band">
+
+  <div class="container responsive-container">
+
+    <iframe src="https://player.vimeo.com/video/20945635?loop=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+
+</div>
+<div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="cream-band">
+  <div class="container">
+      <div class="row text-padding">
+        <div class="col-md-4">
+          <p><strong class="pink">Key Point 1</strong><br>
+          Text about how important point that is and how we do it better than anyone else</p>
+        </div>
+        <div class="col-md-4">
+          <p><strong class="pink">Key Point 2</strong><br>
+            Text about how important point that is and how we do it better than anyone else</p>
+        </div>
+        <div class="col-md-4">
+          <p><strong class="pink">Key Point 3</strong><br>
+          Text about how important point that is and how we do it better than anyone else</p>
+        </div>
+      
+      </div>
+  </div>
+</div>
+
+<div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="container">
+  <h2 class="section-headers">Projects</h2>
+  <hr class="mb-30">
+  <div class="row">
+  <% @web_apps.each do |web_app| %>
+
+  
+
+    <div class="col-md-4 mb-30">
+
+
+  <%= link_to image_tag(web_app.image, :alt => "Other Projects", :class => "img-fluid" ), web_app  %>
+
+  
+    </div>
+
+  
+  
+  <%end%>
+  </div>
+</div>
+
+
+<br>
+
+<%= link_to 'New Website', new_web_app_path %>
+

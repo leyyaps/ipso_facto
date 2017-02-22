@@ -1,0 +1,84 @@
+<div class="jumbotron jumbo-social">
+  <div class="show-title">
+    <h1 class="animated slideInLeft display-3 jumboheader">Social Media</h1>
+  </div>
+</div>
+
+
+<div class="cream-band">
+  <div class="container">
+    <p class="py-3">
+      Some generic text here about logo design. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra ex nisi, at vestibulum lacus viverra eu. Nullam vehicula leo ut mi placerat lacinia. Suspendisse placerat posuere risus id blandit.
+    </p>
+    
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container">
+  <div class="row my-2">
+    <h2 data-scroll="toggle(.fromTopIn, .fromTopOut)" class="section-headers">Our Social Media Services</h2>
+    <hr>
+    <div class="hidden-sm-up">I am hidden on big. Show on small</div>
+  </div>
+  <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) offset(0, -250px) once" class="row is-flex my-2">  
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card social item hvr-bob">
+          <%= video_tag ("facebook_iphone.mp4"), :controls => false, :autobuffer => true, :autoplay => true, :loop => true, :alt => "Facebook Services", :class => "card-img-top rounded-0 img-fluid"  %>
+
+          
+
+          <div class="card-block text-center">
+            <h4 class="card-title"><%= link_to 'Facebook', facebook_path, :class => 'pink' %></h4>
+            <p class="card-text">Building your brand identity is essential for any business in todays marketplace. We can help design your logo that not only fits your brands' aims and aspirations, but delivers you a competitive edge.</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      <div class="card social hvr-bob">
+        <%= video_tag ("insta-social-example.mp4"), :controls => false, :autobuffer => true, :autoplay => true, :loop => true, :alt => "Instagram Services", :class => "card-img-top rounded-0 img-fluid"  %>
+        <div class="card-block text-center">
+          <h4 class="card-title"><%= link_to 'Instagram', instagram_path, :class => 'pink' %></h4>
+          <p class="card-text">Need help promoting your brand on the most exciting visual social media platform around. Lets us help shape your content and advertising to better reach and engage with your audience.</p>
+    
+        </div>
+      </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      <div class="card social hvr-bob item">
+        <%= video_tag ("snapchat_filter.mp4"), :controls => false, :autobuffer => true, :autoplay => true, :loop => true, :alt => "SnapChat Services", :class => "card-img-top rounded-0 img-fluid"  %>
+        <div class="card-block text-center">
+          <h4 class="card-title"><%= link_to 'SnapChat', snapchat_path, :class => 'pink' %></h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          
+        </div>
+      </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      <div class="card social hvr-bob item">
+        <%= video_tag ("twitter_iphone_video.mp4"), :controls => false, :autobuffer => true, :autoplay => true, :loop => true, :alt => "Twitter Services", :class => "card-img-top rounded-0 img-fluid"  %>
+        <div class="card-block text-center">
+          <h4 class="card-title"><%= link_to 'Twitter', twitter_path, :class => 'pink' %></h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+<div class="cream-band">
+  <div class="container">
+    <p data-scroll="toggle(.fromTopIn, .fromTopOut)" class="pt-2 text-center lead">
+      Whether it’s a clean and professional look, or a quirky and fun one. Whatever the style you’re looking for, our creative team can help you out.
+    </p>
+    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once" class="row mb-2">
+    <%= link_to 'Get a quote', contact_path, :class => "btn btn-primary d-block mx-auto button-pink" %>
+    </div>
+</div>
+  
+</div>

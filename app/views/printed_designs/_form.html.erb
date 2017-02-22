@@ -1,0 +1,43 @@
+<%= form_for(printed_design, html: {multipart: true}) do |f| %>
+  <% if printed_design.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(printed_design.errors.count, "error") %> prohibited this printed_design from being saved:</h2>
+
+      <ul>
+      <% printed_design.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="my-3">
+  <div class="field">
+    <%= f.label :client %>
+    <%= f.text_field :client %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lead_image %>
+    <%= f.file_field :lead_image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :secondary_image %>
+    <%= f.file_field :secondary_image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  </div>
+<% end %>

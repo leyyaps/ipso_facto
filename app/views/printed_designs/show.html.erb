@@ -1,0 +1,42 @@
+<div class="container">
+
+<h2 class="section-headers"><%= @printed_design.client %></h2>
+<hr>
+
+<div class="jumbotron" style="background-image: url(<%= @printed_design.secondary_image %>);"></div>
+</div>
+<div class="container">
+
+<p>
+  <strong>Client:</strong>
+  <%= @printed_design.client %>
+</p>
+
+<p>
+  <strong>Lead image:</strong>
+  
+ 
+
+  <%= image_tag(@printed_design.lead_image, :alt => "Image of client work", :class => "smeg", width: 600) if @printed_design.lead_image.present? %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @printed_design.date %>
+</p>
+
+<div class="cream-band">
+  <div class="container">
+    <p class="text-box">
+      <%= @printed_design.description %>
+    </p>
+  </div>
+</div>
+
+
+
+<%= link_to 'Edit', edit_printed_design_path(@printed_design) %> |
+<%= link_to 'Back', printed_designs_path %>
+
+
+</div>

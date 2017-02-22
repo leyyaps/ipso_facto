@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project_name: MyString
+  image: MyString
+  client: MyString
+  date: 2016-12-16
+  link: MyString
+  description: MyText
+
+two:
+  project_name: MyString
+  image: MyString
+  client: MyString
+  date: 2016-12-16
+  link: MyString
+  description: MyText

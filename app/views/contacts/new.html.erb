@@ -1,0 +1,112 @@
+<div class="jumbotron jumbo-contact">
+  
+    <div class="show-title">
+      <h1 class="animated slideInLeft display-3 jumboheader">Contact Us</h1>
+    </div>
+
+</div>
+<div class="container">
+
+  <div class="row mt-30 mb-30">
+    <div class="col-md-8 offset-md-2 text-center">
+    <h3>Get in touch</h3>
+    <p>Got an idea for some design work that needs doing? Or maybe you are looking for an awesome new website? We would love to hear from you</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div data-scroll="toggle(.fromLeftIn, .fromLeftOut) offset(0, -200px)" class="col-md-5 contact">
+      <div class="contact-box-left mb-30">
+        <div class="contact-icon-left">
+          <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+        </div>
+        <h6>ADDITIONAL CONTACT INFO</h6>
+        <p>Unit T9, Lenton Business Centre<br>Lenton Boulevard<br>Nottingham, NG7 3BY</p>
+
+        <a class="pink hvr-float" href="mailto:info@ipsofactouk.com"><i class="fa fa-envelope-o left"></i>info@ipsofactouk.com</a>
+        <br>
+        <a class="pink hvr-float" href=""><i class="fa fa-phone left"></i>+44 (0)330 332 0611</a>
+      </div>
+      
+      <div class="contact-box-left mb-30">
+        <div class="contact-icon-left">
+          <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
+        </div>
+        <h6>BUSINESS HOURS</h6> 
+        <p>Mon - Fri: 8:30am to 5pm</p>
+        
+      
+      </div>
+
+      <div class="contact-box-left mb-30">
+        
+        <h6>FOLLOW US</h6> 
+        <p class="pink">
+        <i class="fa fa-facebook-official fa-2x left" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-2x left" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-2x left" aria-hidden="true"></i>
+        <i class="fa fa-linkedin fa-2x left" aria-hidden="true"></i>
+        </p>
+        
+      
+      </div>
+
+    </div>
+    <div data-scroll="toggle(.fromRightIn, .fromRightOut) offset(0, -200px)" class="col-md-6 offset-md-1">
+      <h6 class="successContent">
+        <i class="fa fa-check left"></i>Your message has been sent successfully
+      </h6>
+
+      <h6 class="errorContent">
+        <i class="fa fa-exclamation-circle left"></i>There was a problem validating the form. Please check and try again!
+      </h6>
+
+      <%= simple_form_for @contact, :html => {:class => 'contact-form' } do |f| %>
+        <div class="form-field-wrapper">
+          <%= f.input :name, :required => true, :input_html => { :class => "input-sm form-full form-control" }, :placeholder => 'Name' %>
+        </div>
+        <div class="form-field-wrapper">
+          <%= f.input :email, :required => true, :input_html => { :class => "input-sm form-full form-control" }, :placeholder => 'Email' %>
+        </div>
+        <div class="form-field-wrapper">
+          <%= f.input :message, :as => :text, :required => true, :input_html => { :class => "input-sm form-full form-control" },:placeholder => 'Your Message' %>
+        </div>
+        <div class= "hidden">
+          <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+        </div>
+        <div>
+          </br>
+          <%= f.button :submit, 'Send message', :class=> "btn btn-primary btn-pink form-full" %>
+        </div>
+      <% end %>
+
+
+    </div>
+    
+  </div>
+</div> , 
+
+<div data-scroll="toggle(.fromTopIn, .fromTopOut) offset(0, -200px)" id="map"></div>
+<script>
+      function initMap() {
+        var ipso = {lat: 52.953466, lng: -1.175815};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: ipso,
+          scrollwheel:  false,
+          styles: [{"featureType":"administrative","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":"50"},{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"lightness":"40"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":-25},{"saturation":-100}]}]
+        }); 
+       
+        var marker = new google.maps.Marker({
+          position: ipso,
+          animation: google.maps.Animation.DROP,
+          map: map,
+          
+        });
+      }
+    </script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk7ikYkLRhch00FALQ_k_dDbyQl3sCzp0&callback=initMap"></script>
+
+
+

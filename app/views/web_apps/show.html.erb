@@ -1,0 +1,101 @@
+
+
+<div class="container">
+  <h2 class="section-headers"><%= @web_app.project_name %></h2>
+  <hr>
+</div>
+
+<div class="jumbotron" style="background-image: url(<%= @web_app.image %>);"></div>
+
+<div class="container">
+  
+<p>
+  <strong>Client:</strong>
+  <%= @web_app.client %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @web_app.date %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @web_app.link %>
+</p>
+</div>
+<div class="cream-band">
+  <div class="container">
+    <p class="text-box">
+      <%= @web_app.description %>
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="section-headers">Get in touch</h2>
+  <hr>
+  <p>
+    Got an idea for a new company? Or want to sort the branding on an existing one? Get in touch today and one of our team will be there to help take you through the whole process. Prices start from as little as <strong>£25 per hour</strong>.
+
+
+  </p>
+  <div class="text-center">
+  <%= link_to 'Contact Us', contact_path, :class => "btn btn-primary btn-block main-btn" %>
+  </div>
+</div>
+<div class="cream-band mt-30 padding-bottom-30">
+<div class="container">
+  <h2 class="section-headers">Related Projects</h2>
+  <hr>
+
+  <div id="projects-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#projects-carousel" data-slide-to="1"></li>
+      <li data-target="#projects-carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <% @web_apps.each_with_index do |web_app, index| %>
+        <div class="carousel-item <% if index == 0 %>active<% end %>">
+          <%= image_tag web_app.image_url if web_app.image? %>
+        </div>
+      <% end %>
+    </div>
+    <a class="left carousel-control" href="#projects-carousel" role="button" data-slide="prev">
+      <span class="icon-prev" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#projects-carousel" role="button" data-slide="next">
+      <span class="icon-next" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+</div>
+  <div class="container">
+    <h2 class="section-headers">Our Services</h2>
+    <hr>
+  </div>
+
+
+  <div class="container">
+    <div class="row spacer">
+      <div class="col-md-3">
+        <div class="circle">Graphic Design</div>
+      </div>
+      <div class="col-md-3">
+        <div class="circle">Web Development</div>
+      </div>
+      <div class="col-md-3">
+        <div class="circle">Social Media</div>
+      </div>
+      <div class="col-md-3">
+        <div class="circle">Search</div>
+      </div>
+    </div> 
+  </div>
+
+
+<%= link_to 'Edit', edit_web_app_path(@web_app) %> |
+<%= link_to 'Back', web_apps_path %>

@@ -1,0 +1,1 @@
+json.array! @printed_designs, partial: 'printed_designs/printed_design', as: :printed_design

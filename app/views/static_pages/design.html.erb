@@ -1,0 +1,77 @@
+<div class="jumbotron jumbo-design">
+    <div class="show-title">
+      <h1 class="animated slideInLeft display-3 jumboheader">Remarkable Design</h1>
+    </div>
+</div>
+
+<div class="cream-band">
+  <div class="container">
+    <p class="py-3 mb-0 text-center lead">
+      At Ipso Facto we are passionate about beautiful design.<br>We revel in bringing together the best in function and form to deliver remarkable graphics for your business. 
+    </p>
+    
+  </div>
+</div>
+
+<div class="container">
+  <div class="row my-2">
+    <h2 data-scroll="toggle(.fromTopIn, .fromTopOut)" class="section-headers">Our Design Services</h2>
+    <hr>
+    <div class="hidden-sm-up">I am hidden on big. Show on small</div>
+  </div>
+  <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) offset(0, -250px) once" class="row is-flex my-2">  
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card item hvr-bob">
+          <%= link_to image_tag("logo-design-image.jpg", :alt => "Logo Design", :class => "card-img-top rounded-0 img-fluid" ), logos_path %>
+
+          <div class="card-block">
+            <h4 class="card-title"><%= link_to 'Logo Design', logos_path, :class => 'link' %></h4>
+            <p class="card-text">Building your brand identity is essential for any business in todays marketplace. We can help design your logo that not only fits your brands' aims and aspirations, but delivers you a competitive edge.</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      <div class="card hvr-bob item">
+        <%= link_to image_tag("poster-demo.png", :alt => "Printed Design", :class => "card-img-top rounded-0 img-fluid" ), printed_designs_path %>
+        <div class="card-block">
+          <h4 class="card-title"><%= link_to 'Printed Design', printed_designs_path, :class => 'link' %></h4>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    
+        </div>
+      </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      <div class="card hvr-bob item">
+        <%= link_to image_tag("laptop_mockup.png", :alt => "Graphic design for web", :class => "card-img-top rounded-0 img-fluid", :autoplay => true ), printed_designs_path %>
+        <div class="card-block">
+          <h4 class="card-title">Graphic Design for Web</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          
+        </div>
+      </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      <div class="card hvr-bob item">
+        <%= link_to video_tag("animation.mp4", :controls => false, :autobuffer => true, :autoplay => true, :loop => true, :alt => "Video Graphics and Animations", :class => "card-img-top rounded-0 img-fluid" ), video_animations_path %>
+        <div class="card-block">
+       
+          <h4 class="card-title"><%= link_to 'Video Graphics & Animations', video_animations_path, :class => 'link' %></h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+<div class="cream-band">
+  <div class="container">
+    <p data-scroll="toggle(.fromTopIn, .fromTopOut)" class="pt-2 text-center lead">
+      Whether it’s a clean and professional look, or a quirky and fun one. Whatever the style you’re looking for, our creative team can help you out.
+    </p>
+    <div data-scroll="toggle(.fromBottomIn, .fromBottomOut) once" class="row mb-2">
+    <%= link_to 'Get a quote', contact_path, :class => "btn btn-primary d-block mx-auto button-pink" %>
+    </div>
+</div>
+  
+</div>
