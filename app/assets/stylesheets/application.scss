@@ -57,12 +57,12 @@ nav.navbar.navbar-light.custom-nav {
 a.navbar-brand {
   width: 100px;
   height: 65px;
-  background:url('ipso_facto_color_white.svg') no-repeat center center;
+  background:url('../images/ipso_facto_color_white.svg') no-repeat center center;
   -webkit-transition: all 0.7s ease 0s;
 }
 
 a.navbar-brand.scrolled {
-  background:url('ipso_color_logo.svg') no-repeat center center;
+  background:url('../images/ipso_color_logo.svg') no-repeat center center;
   -webkit-transition: all 0.7s ease 0s;
 }
 
@@ -86,7 +86,7 @@ div#navbarResponsive.navbar-toggleable-md{
 #welcome {
   width: 100%;
   height: 100vh;
-  background:url('umbrella2.jpg')no-repeat center center;
+  background:url('../images/umbrella2.jpg')no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -108,7 +108,7 @@ div#navbarResponsive.navbar-toggleable-md{
 #flamingo {
   width: 100%;
   height: 100vh;
-  background:url('flamingo.jpg')no-repeat center center;
+  background:url('../images/flamingo.jpg')no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -303,7 +303,7 @@ input.input-sm, .input-sm {
 }
 .jumbo-logo-index {
 
- background:url('logo-designer.jpg')no-repeat center center;
+ background:url('../images/logo-designer.jpg')no-repeat center center;
  background-attachment: fixed;
  -webkit-background-size: cover;
  -moz-background-size: cover;
@@ -313,7 +313,7 @@ input.input-sm, .input-sm {
 }
 
 .jumbo-contact {
-  background:url('woman-on-laptop.jpg')no-repeat center center;
+  background:url('../images/woman-on-laptop.jpg')no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -323,7 +323,7 @@ input.input-sm, .input-sm {
 }
 
 .jumbo-website {
-  background:url('man-working.jpg')no-repeat center center;
+  background:url('../images/man-working.jpg')no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -332,7 +332,7 @@ input.input-sm, .input-sm {
   margin-bottom: 0;
 }
 .jumbo-design {
-  background:url('group-design.jpg')no-repeat center center;
+  background:url('../images/group-design.jpg')no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -341,7 +341,7 @@ input.input-sm, .input-sm {
   margin-bottom: 0;
 }
 .jumbo-print {
-  background:url('stationary-background.jpg')no-repeat center center;
+  background:url('../images/stationary-background.jpg')no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -351,7 +351,7 @@ input.input-sm, .input-sm {
 }
 
 .jumbo-social {
-  background:url('girl_on_phone.jpg')no-repeat center center;
+  background:url('../images/girl_on_phone.jpg')no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -361,7 +361,7 @@ input.input-sm, .input-sm {
 }
 
 .jumbo-facebook {
-  background:url('facebook.jpg')no-repeat center center;
+  background:url('../images/facebook.jpg')no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -371,7 +371,7 @@ input.input-sm, .input-sm {
 }
 
 .jumbo-instagram {
-  background:url('cameras_photographing_food.jpg')no-repeat center center;
+  background:url('../images/cameras_photographing_food.jpg')no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -381,7 +381,7 @@ input.input-sm, .input-sm {
 }
 
 .jumbo-snapchat {
-  background:url('snap_selfie.jpg')no-repeat center center;
+  background:url('../images/snap_selfie.jpg')no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -391,7 +391,7 @@ input.input-sm, .input-sm {
 }
 
 .jumbo-twitter {
-  background:url('tweet_cover.jpg')no-repeat center center;
+  background:url('../images/tweet_cover.jpg')no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -401,7 +401,7 @@ input.input-sm, .input-sm {
 }
 
 .jumbo-search {
-  background:url('search.jpg')no-repeat center center;
+  background:url('../images/search.jpg')no-repeat center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -573,7 +573,7 @@ img.ga-logo {
     text-indent: 100%;
     overflow: hidden;
     white-space: nowrap;
-    background: rgba(255, 255, 255, 0.8) url('cd-top-arrow.svg') no-repeat center 50%;
+    background: rgba(255, 255, 255, 0.8) url('../images/cd-top-arrow.svg') no-repeat center 50%;
     background-size: 20px;
     -webkit-transition: all 0.7s ease 0s;
 }
