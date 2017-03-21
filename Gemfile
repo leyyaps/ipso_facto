@@ -1,15 +1,19 @@
 source 'https://rubygems.org'
 
-
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
+end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
 
 # Use Puma as the app server
 gem 'carrierwave'
-
+gem 'fog'
+gem 'mini_magick'
 gem 'gmaps4rails'
-
+gem 'figaro'
 gem 'pg'
 
 gem 'underscore-rails'
@@ -59,12 +63,7 @@ end
 
 group :development do
 
-  gem 'capistrano', '~> 3.7', '>= 3.7.1'
-  gem 'capistrano-rails', '~> 1.2'
-  gem 'capistrano-passenger', '~> 0.2.0'
 
-  # Add this if you're using rbenv
-  gem 'capistrano-rbenv', github: "capistrano/rbenv"
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
