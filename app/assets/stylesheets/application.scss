@@ -35,51 +35,38 @@ body {
 
 }
 
-/* NAV BAR STYLING */
+// New NAV
 
-// .navbar {
-//   background:transparent;
-//   background-image:none;
-//   border-color:transparent;
-//   box-shadow:none;
-// }
-nav {
-  -webkit-transition: all 0.7s ease 0s;
-}
-
-nav.navbar.navbar-light.custom-nav {
-  border-radius: 0;
-  color: #F20574;
-}
-.navbar-light .navbar-nav .nav-link {
-   color: #F20574;
-}
 a.navbar-brand {
-  width: 100px;
+   width: 100px;
   height: 65px;
-  background:url('../images/ipso_facto_color_white.svg') no-repeat center center;
+   background:url('../images/ipso_facto_color_white.svg') no-repeat center center;
   -webkit-transition: all 0.7s ease 0s;
-}
-
-a.navbar-brand.scrolled {
-  background:url('../images/ipso_color_logo.svg') no-repeat center center;
+ }
+ .navbar-light .navbar-nav .nav-link {
+  color: #F20574;
+ }
+ .bg-faded {
+  background: transparent;
   -webkit-transition: all 0.7s ease 0s;
-}
+ }
 
-.navbar .nav-link{
-  padding-top: 1.2rem;
-}
+ a.navbar-brand.scrolled {
+   background:url('../images/ipso_color_logo.svg') no-repeat center center;
+  -webkit-transition: all 0.7s ease 0s;
+  }
 
-.navbar-white {
+ .navbar-white {
   background-color: #ffffff;
   -webkit-transition: all 0.7s ease 0s;
-}
+ }
 
-div#navbarResponsive.navbar-toggleable-md{
-  text-align: center;
-}
+// New NAV End
 
-/* END NAV BAR*/
+
+
+
+
 
 
 /* WELCOME IMAGE - UMBRELLA*/
